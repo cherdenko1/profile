@@ -7,17 +7,27 @@
 
 /* Main Container */
 .main-container {
-
+    width: 100%;
 }
 
 /* Header */
 header {
+    height: 64px;
 
+    background-color: rgb(223, 223, 223);
 }
 
 /* Navigation */
 nav {
+    height: 32px;
+    background-color: rgb(182, 182, 182);
+    position: sticky;
+    top: 0;
+}
 
+/* Main Content */
+main {
+    height: 100%;
 }
 
 /* Footer */
