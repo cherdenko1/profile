@@ -31,6 +31,8 @@ header {
 }
 header > h1 {
     padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.8em;
 }
 #current {
     background-color: var(--default-color);
@@ -45,7 +47,9 @@ nav {
     border-bottom: 1px solid var(--fade-color);
     flex: content;
 
-    flex: content;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 /* Objects inside the NavBar */
