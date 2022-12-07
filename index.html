@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="main.css">
         <script></script>
     </head>
 
@@ -15,8 +16,6 @@
 
             <nav>
                 <a id="current" href="#">Home</a>
-                <a href="#">Login</a>
-                <a href="#">Register</a>
                 <a href="#">Pictures</a>
                 <a href="#">Videos</a>
                 <a href="#">Music</a>
@@ -24,7 +23,19 @@
 
             <!--This is where the main content is-->
             <main>
-                Main content
+                <div class="side">
+                    <form>
+                        <h1>Login</h1>
+                        <input id="username" type="text" placeholder="Username" name="user-name">
+                        <input id="password" type="password" placeholder="Password" name="pass">
+                        <input id="login" type="submit" name="submit" value="Login">
+                        <button id="register">Register</button>
+                    </form>
+                </div>
+
+                <div class="content">
+                    Content
+                </div>
             </main>
             <!--End-->
 

@@ -10,6 +10,10 @@
     --fade-color: rgb(212, 212, 212);
 }
 
+h1 {
+    font-size: 1.7em;
+}
+
 /* Main Container */
 .main-container {
     width: 100%;
@@ -62,7 +66,8 @@ main {
 /* Footer */
 footer {
     flex: 7%;
-    background-color: var(--default-color);
     text-align: center;
     padding: 8px;
+    border-top: 1px solid var(--fade-color);
+    background-color: var(--default-color);
 }

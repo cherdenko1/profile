@@ -1,0 +1,51 @@
+main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.side {
+    border-right: 1px solid var(--fade-color);
+    overflow: hidden;
+}
+
+.side > form {
+    padding: 20px;
+}
+
+.side > form > h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.side > form > input[type=text], input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 8px 0px;
+    border: none;
+
+    height: 32px;
+    padding-left: 10px;
+    border-bottom: 2px solid var(--fade-color);
+}
+
+#login, #register {
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--default-color);
+    width: 100%;
+    height: 32px;
+    margin: 4px 0px;
+}
+
+#register {
+    background-color: white;
+    color: var(--default-color);
+    border: 1px solid var(--default-color);
+}
+
+
+
+.content {
+    /* TBA */
+}
