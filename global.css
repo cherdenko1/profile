@@ -1,77 +1,64 @@
+:root {
+    --fade: rgb(194, 194, 194);
+    --default: rgb(224, 91, 3);
+}
+
 * {
     margin: 0px;
     padding: 0px;
-    border: none;
-
+    text-decoration: none;
+    color: black;
     font-family: sans-serif;
 }
 
-:root {
-    --default-color: rgb(233, 116, 73);
-    --fade-color: rgb(212, 212, 212);
+body {
+    width: 100vw;
+    height: 100vh;
 }
 
-h1 {
-    font-size: 1.7em;
-}
-
-/* Main Container */
 .main-container {
     width: 100%;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    display: grid;
+    grid-template-rows: .25fr 2fr .25fr;
 }
 
-/* Header */
 header {
-    flex: 10%;
-    text-align: center;
-}
-header > h1 {
-    padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2.8em;
-}
-#current {
-    background-color: var(--default-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--fade);
 }
 
-/* Navigation */
-nav {
+header > h1 {
+    text-align: center;
+    padding: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.25em;
+    color: var(--default);
+}
+
+header > .nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-
-    border-bottom: 1px solid var(--fade-color);
-    flex: content;
-
-    position: sticky;
-    top: 0;
-    background-color: white;
 }
 
-/* Objects inside the NavBar */
-nav > a {
-    padding: 20px;
-    text-decoration: none;
-    color: black;
-}
-nav > a:hover {
-    background-color: var(--fade-color);
+header > .nav > a {
+    padding: 22px;
+    box-sizing: border-box;
 }
 
-/* Main Content */
-main {
-    flex: 78%;
+header > .nav > a:hover {
+    background-color: var(--fade);
 }
 
-/* Footer */
+#current {
+    background-color: var(--default);
+    color: white;
+}
+
 footer {
-    flex: 7%;
+    background-color: var(--default);
+    color: white;
     text-align: center;
-    padding: 8px;
-    border-top: 1px solid var(--fade-color);
-    background-color: var(--default-color);
+    padding: 12px;
 }
